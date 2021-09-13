@@ -38,7 +38,7 @@ input[type=number]
 
 main {
 	display: flex;
-	height: 90vh;
+	min-height: 90vh;
 	margin: 2rem;
 	background: rgba(0, 0, 0, 0.6);
 	backdrop-filter: blur(20px);
@@ -120,7 +120,7 @@ button{
 }
 
 .movies{
-	width:100%;
+	width:90%;
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
@@ -130,6 +130,7 @@ button{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin-bottom: 1.5rem;
 }
 
 .poster{
@@ -168,4 +169,13 @@ button{
 
 .movie:hover .button{
 	display: flex;
+}
+
+.card{
+	display:flex;
+	background: rgba(0,0,0,.5);
+	width: 50%;
+	padding: 2rem;
+	border-radius: 10px;
+	
 }

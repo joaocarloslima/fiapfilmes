@@ -29,7 +29,8 @@ public class Movie {
 	private String poster;
 	
 	public String getPoster() {
-		if(poster == null) return "";
+		if(poster.equals("")) 
+			return "https://raw.githubusercontent.com/joaocarloslima/fiapfilmes/main/src/main/resources/static/images/no_poster.png";
 		
 		return this.poster;
 	}
