@@ -41,7 +41,15 @@
 			<input name="name" type="search" placeholder="buscar filme...">
 		</form>
 		<div class="movies">
-			
+			<div class="movie" th:each="movie : ${movies}">
+				<img alt="poster" class="poster" th:src="@{images/velozes.jpg}">
+				<p class="movie-title" th:text="${movie.description}"></p>
+				<p class="movie-year" th:text="${movie.year}"></p>
+				<div class="movie-rating">
+					<img alt="star icon" th:src="@{images/star.svg}">
+					<p th:text="${movie.rating}"></p>
+				</div>
+			</div>
 		</div>
 	</section>
 </main>
