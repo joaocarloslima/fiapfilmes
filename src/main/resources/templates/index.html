@@ -49,6 +49,9 @@
 					<img alt="star icon" th:src="@{images/star.svg}">
 					<p th:text="${movie.rating}"></p>
 				</div>
+				<a th:href="${'/delete/' + movie.id}" class="button">
+					<img alt="trash" th:src="@{images/trash.svg}">
+				</a>
 			</div>
 		</div>
 	</section>

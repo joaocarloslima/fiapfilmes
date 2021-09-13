@@ -151,5 +151,21 @@ button{
 }
 
 .movie .movie-rating p{
+	
 	margin-left: .5rem;
+}
+
+.button{
+	position: absolute;
+	display: none;
+	margin: 5px;
+	align-self: flex-end;
+	border:0;
+	font-family: Montserrat;
+	font-size: .8rem;
+	cursor: pointer;
+}
+
+.movie:hover .button{
+	display: flex;
 }

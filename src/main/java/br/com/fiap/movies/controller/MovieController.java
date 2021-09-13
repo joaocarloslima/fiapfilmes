@@ -3,6 +3,7 @@ package br.com.fiap.movies.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
@@ -39,6 +40,13 @@ public class MovieController {
 	@GetMapping("/about")
 	public String about() {
 		return  "about";
+	}
+	
+	@GetMapping("/delete/{id}")
+	public String about(@PathVariable Long id, RedirectAttributes redirect) {
+		redirect.addFlashAttribute("message", "filme apagado com sucesso");
+		repository.deleteById(id);
+		return  "redirect:/";
 	}
 
 
