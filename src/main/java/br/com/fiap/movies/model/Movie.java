@@ -24,4 +24,15 @@ public class Movie {
 
 	@Column(name = "rating")
 	private int rating;
+	
+	@Column(name = "poster")
+	private String poster;
+	
+	public String getPoster() {
+		if(poster == null) return "";
+		
+		return this.poster;
+	}
+	
+	
 }

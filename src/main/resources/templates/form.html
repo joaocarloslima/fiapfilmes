@@ -48,10 +48,15 @@
 				<input type="number" min="1900" max="2050" name="year" id="year">
 			</div>
 			<div class="field">
+				<label for="poster">URL do poster</label>
+				<input type="text" name="poster" id="poster">
+			</div>
+			<div class="field">
 				<label for="rating">Rating</label>
 				<input type="range" min=0 max=10 name="rating" id="rating" value="5" oninput="document.querySelector('#rating-out').value=this.value;">
 				<output id="rating-out">5</output>
 			</div>
+			
 			<div class="field">
 				<button>salvar</button>
 			</div>

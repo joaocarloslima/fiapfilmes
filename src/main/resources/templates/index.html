@@ -42,7 +42,7 @@
 		</form>
 		<div class="movies">
 			<div class="movie" th:each="movie : ${movies}">
-				<img alt="poster" class="poster" th:src="@{images/velozes.jpg}">
+				<img alt="poster" class="poster" th:src="${movie.poster}">
 				<p class="movie-title" th:text="${movie.description}"></p>
 				<p class="movie-year" th:text="${movie.year}"></p>
 				<div class="movie-rating">
