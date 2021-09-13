@@ -36,6 +36,7 @@
 		
 	</aside>
 	<section>
+		<div class="alert" th:if="${message != null}" th:text="${message}"></div>
 		<form>
 			<input name="name" type="search" placeholder="buscar filme...">
 		</form>
