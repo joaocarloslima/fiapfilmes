@@ -16,6 +16,11 @@ public class MovieController {
 	public String create() {
 		return  "form";
 	}
+	
+	@GetMapping("/about")
+	public String about() {
+		return  "about";
+	}
 
 
 }
